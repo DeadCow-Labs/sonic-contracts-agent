@@ -1,0 +1,9 @@
+/target
+/Cargo.lock
+/sonic-ai-client/node_modules
+/sonic-ai-client/.env
+/sonic-ai-client/.env.local
+/sonic-ai-client/.env.development.local
+/sonic-ai-client/.env.test.local
+/sonic-ai-client/.env.production.local
+

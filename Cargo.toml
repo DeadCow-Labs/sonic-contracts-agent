@@ -1,0 +1,30 @@
+[package]
+name = "sonic-ai-infra"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+no-entrypoint = []
+test-bpf = []
+
+[dependencies]
+solana-program = "=1.14.18"
+borsh = "=0.9.3"
+thiserror = "=1.0.40"
+borsh-derive = "=0.9.3"
+
+[dev-dependencies]
+solana-program-test = "=1.14.18"
+solana-sdk = "=1.14.18"
+tokio = { version = "=1.14.1", features = ["full", "macros"] }
+solana-banks-client = "=1.14.18"
+
+[lib]
+name = "sonic_ai_infra"
+crate-type = ["cdylib", "lib"]
+
+[workspace]
+members = []
+
+[profile.release]
+overflow-checks = true
